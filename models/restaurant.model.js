@@ -5,7 +5,8 @@ const priceRangeMiddleware = require("../middlewares");
 const restaurantSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    required: true,
+    unique: true
   },
   address: {
     type: String,

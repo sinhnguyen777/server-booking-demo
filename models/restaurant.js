@@ -32,7 +32,7 @@ const restaurantSchema = new mongoose.Schema({
   }]
 });
 
-restaurantSchema.pre('save', priceRangeMiddleware);
+// restaurantSchema.pre('save', priceRangeMiddleware);
 
 const Restaurant = mongoose.model('Restaurant', restaurantSchema);
 

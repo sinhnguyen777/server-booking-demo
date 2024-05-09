@@ -7,6 +7,7 @@ exports.createRestaurant = async (req, res) => {
     await restaurant.save();
     res.status(201).send(restaurant);
   } catch (error) {
+    console.log("error", error);
     res.status(400).send(error);
   }
 };
